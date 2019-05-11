@@ -3,7 +3,7 @@ import {useSpring, animated} from 'react-spring';
 
 function Fadein() {
   const props = useSpring(
-    {opacity: 1, from: {opacity: 0}}
+    {opacity: 1, from: {opacity: 0}, duration: 700}
     );
   return (
   <animated.div style={props}>

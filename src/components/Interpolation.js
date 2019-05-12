@@ -5,7 +5,7 @@ export default function Interpolation() {
   const {o, xyz, color} = useSpring({
     from: {o: 0, xyz: [0, 0, 0], color: 'lightpink'},
     o: 1,
-    xyz: [10, 20, 5],
+    xyz: [8, 5, 3],
     color: 'white'
   });
   return (

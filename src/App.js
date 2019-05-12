@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Fadein from './components/Fadein';
 import Interpolation from './components/Interpolation';
+import Home from './components/Home';
 
-function App() {
-  return (
-    <div style={styleTest} className="App">
-      <Header />
-      <Fadein />
-      <Interpolation />
-    </div>
-  );
+class App extends Component {
+  state = { 
+    displayHomePage: true
+   }
+  render() {
+    if(this.state.displayHomePage) {
+      return (<Home />);
+    }else{ 
+      return ( 
+        <div style={styleTest} className="App">
+          <Header />
+          <Fadein />
+          <Interpolation />
+        </div>
+      );
+    }
+  }
 }
 
 const styleTest = {

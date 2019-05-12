@@ -12,6 +12,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npx create-react-app app-name
 cd app-name
 npm install react-spring
+npm install react-use-gesture
+npm intall lodash-es
 npm start
 ```
 
